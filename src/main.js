@@ -1,4 +1,5 @@
 import App from './App.vue'
+import Index from './Index.vue'
 import CallToAction from './CallToAction.vue'
 import Contacts from './Contacts.vue'
 import Contents from './Contents.vue'
@@ -9,6 +10,7 @@ import Headers from './Headers.vue'
 import Pricings from './Pricings.vue'
 import Teams from './Teams.vue'
 import Testimonials from './Testimonials.vue'
+import LP from './LP.vue'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
@@ -19,6 +21,8 @@ Vue.config.productionTip = false
 
 const router = new VueRouter({
   routes: [
+    { path: '/', component: LP },
+    { path: '/lp', component: LP },
     { path: '/call-to-action', component: CallToAction },
     { path: '/contacts', component: Contacts },
     { path: '/contents', component: Contents },
